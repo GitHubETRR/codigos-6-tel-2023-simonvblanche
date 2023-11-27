@@ -1,0 +1,24 @@
+sustantivos = []
+
+sustantivosF = []
+sustantivosM = []
+sustantivosNOSE = []
+
+cant = int(input("¿Cuantos sustantivos quiere ingresar? "))
+print("Escriba sustantivos: ")
+
+for x in range(cant):
+    valor=input("")
+    sustantivos.append(valor)
+
+for sus in sustantivos:
+    if sus[-1] == "a":
+        sustantivosF.append(sus)
+    elif sus[-1] == "o":
+        sustantivosM.append(sus)
+    else:
+      sustantivosNOSE.append (sus)
+      
+print ("Sustantivos Femeninos: ", sustantivosF)
+print ("Sustantivos Masculinos: ", sustantivosM)
+print ("Sustantivos que no se sabe: ", sustantivosNOSE)
